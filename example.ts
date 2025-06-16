@@ -1,6 +1,6 @@
-import mqtt from './src/index'
+import { connect } from './src/index'
 
-const client = mqtt.connect('mqtt://broker.hivemq.com', {
+const client = connect('mqtt://broker.hivemq.com', {
 	keepalive: 3,
 	port: 1883,
 	reconnectPeriod: 15000,

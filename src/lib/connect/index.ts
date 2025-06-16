@@ -290,5 +290,4 @@ function connectAsync(
 	})
 }
 
-export default connect
-export { connectAsync }
+export { connect, connectAsync }

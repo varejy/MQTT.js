@@ -12,8 +12,15 @@ import Store, { IStore } from './lib/store'
 import { connect, connectAsync } from './lib/connect'
 import KeepaliveManager from './lib/KeepaliveManager'
 
+export function mqtt_connect(args) {
+	return connect(args)
+}
+export declare const Client: typeof MqttClient
+
+export default connect
 export { connect, connectAsync }
-export { MqttClient as Client }
+
+export { MqttClient }
 export { Store, IStore }
 export { DefaultMessageIdProvider, UniqueMessageIdProvider }
 export { KeepaliveManager }
